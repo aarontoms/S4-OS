@@ -8,6 +8,7 @@ void main(){
     scanf("%d", &len);
     int string[len], frame[frames];
 
+    printf("Enter the reference string: ");
     for(int i=0; i<len; i++){
         scanf("%d", &string[i]);
     }
