@@ -82,16 +82,10 @@ void main(){
                 i=0;
             }
         }
-
-        int k;
-        for(k=0; k<procs; k++){
-            if(!p[k].done){
-                break;
-            }
-        }
-        if(k==procs){
+        
+        if(done==procs){
             printf("Safe Sequence: < ");
-            for(int m; m<rear; m++){
+            for(int m=0; m<rear; m++){
                 printf("p%d ", queue[m]);
             }
             printf(">");
